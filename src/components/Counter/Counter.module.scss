@@ -1,0 +1,59 @@
+$title-color: #5f687a;
+$btn-color-minus: #d9534f;
+$btn-color-plus: #5cb85c;
+
+.counter {
+  margin: 100px auto;
+  text-align: center;
+  min-width: 320px;
+}
+
+.title {
+  margin-bottom: 50px;
+  font-size: 60px;
+  color: $title-color;
+}
+
+.count {
+  margin-bottom: 50px;
+  font-size: 120px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:active {
+    transform: translateY(3px);
+  }
+
+  &_minus {
+    background-color: $btn-color-minus;
+    box-shadow: 0 5px 0 darken($btn-color-minus, 5%);
+
+    &:active {
+      box-shadow: 0 2px 0 darken($btn-color-minus, 5%);
+    }
+  }
+
+  &_plus {
+    background-color: $btn-color-plus;
+    box-shadow: 0 5px 0 darken($btn-color-plus, 5%);
+
+    &:active {
+      box-shadow: 0 2px 0 darken($btn-color-plus, 5%);
+    }
+  }
+}

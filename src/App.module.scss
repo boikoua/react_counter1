@@ -1,0 +1,12 @@
+$message-color: #5f687a;
+
+.app {
+  text-align: center;
+}
+
+.message {
+  color: $message-color;
+  font-size: 26px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
